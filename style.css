@@ -388,3 +388,43 @@ h1 em { color: var(--peach); }
   .personal-copy { padding: 20px 0; }
   .site-footer { border-color: #888; }
 }
+
+/* More compact opening section on laptops and desktops */
+@media screen and (min-width: 851px) {
+
+  /* Shorter navigation/header area */
+  .header-inner {
+    min-height: 76px;
+  }
+
+  /* Reduce the opening section's minimum height */
+  .hero {
+    min-height: clamp(480px, 70vh, 560px);
+  }
+
+  /* Less space around the introductory text */
+  .hero-intro {
+    padding: 32px 36px 26px;
+  }
+
+  /* Smaller "Hi, I'm Giorgia" heading */
+  .hero h1 {
+    font-size: clamp(64px, 6vw, 84px);
+    line-height: 1;
+    letter-spacing: -3px;
+    margin-top: 24px;
+  }
+
+  /* Tighten the spaces between the remaining elements */
+  .hero-description {
+    margin-top: 22px;
+  }
+
+  .hero-actions {
+    margin-top: 22px;
+  }
+
+  .hero-footnote {
+    padding-top: 18px;
+  }
+}
