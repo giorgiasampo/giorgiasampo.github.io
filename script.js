@@ -106,7 +106,7 @@ const SITE_SETTINGS = {
       if (portrait) {
         portrait.src = SITE_SETTINGS.portraitFile;
         portrait.alt = SITE_SETTINGS.portraitAlt;
-        if (label) label.hidden = true;
+        if (label) label.hidden = false;
       }
     };
     candidate.onerror = () => console.warn("Portrait not found. Check portraitFile and the uploaded filename; keeping the botanical placeholder.");
